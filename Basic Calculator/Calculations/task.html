@@ -1,0 +1,51 @@
+<div class="step-text">
+<h5 id="description">Description</h5>
+<p>You're almost there. You already have working buttons that can input numbers. We can't call our app a calculator yet, as it doesn't really calculate. Let's change that!</p>
+<h5 id="objectives">Objectives</h5>
+<ol>
+<li>After typing in the number and pressing an operation button (<code class="java">+ - * /</code>) your app should:
+
+	<ul>
+<li>If <code class="java">displayEditText</code> text is not empty get it's value and save it as first term of the operation</li>
+<li>If <code class="java">displayEditText</code> text is empty get the hint instead and save the value as first term of the operation</li>
+<li>Save the operation</li>
+<li>Set <code class="java">displayEditText</code> hint to the number displayed on text</li>
+<li>Set <code class="java">displayEditText</code> text to empty string</li>
+</ul>
+</li>
+<li>After pressing the second number and clicking <code class="java">equalButton</code>, your app should:
+	<ul>
+<li>Make the operation using both terms</li>
+<li>Set <code class="java">displayEditText</code> hint to the result of the operation</li>
+<li>Set <code class="java">displayEditText</code> text to empty string</li>
+</ul>
+</li>
+<li>Give support for chained operations using the result of previous operation
+	<ul>
+<li>ex: <code class="java">`2 + 3 = + 5 =`</code> results on <code class="java">10</code>;</li>
+</ul>
+</li>
+<li>Give support for unary minus.
+	<ul>
+<li>If the first term is not set interpret the first click to <code class="java">subtractButton</code> as unary minus for the first term
+		<ul>
+<li>ex1: <code class="java">`- 5 + 8 =`</code> results on <code class="java">3</code>;</li>
+<li>ex2: <code class="java">`- 1 * 2 =`</code> results on <code class="java">-2</code>;</li>
+</ul>
+</li>
+<li>If the first term is set interpret the first click to <code class="java">subtractButton</code> as subtract operation. After the operation is set interpret click to <code class="java">subtractButton</code> as unary minus for the second term
+		<ul>
+<li>ex1: <code class="java">`8 - 5 =`</code> results on <code class="java">3</code>;</li>
+<li>ex2: <code class="java">`8 - - 5 =`</code> results on <code class="java">13</code>;</li>
+<li>ex3: <code class="java">`1 * - 2 =`</code> results on <code class="java">-2</code>;</li>
+<li>ex4: <code class="java">`1 * - 2 = + - 2 =`</code>results on <code class="java">-4</code>;</li>
+<li>ex5: <code class="java">`1 * - 2 = - - 2 =`</code>results on <code class="java">0</code>;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h5 id="example">Example</h5>
+<p><strong>Example: </strong><em>An example of your program</em></p>
+<p><img alt="Calculating numbers in the Basic Calculator" height="600" name="stage3_basicCalculator.gif" src="https://ucarecdn.com/db2d8183-3802-4e47-ae3b-9bff4b8aaf8a/" width="340"/></p>
+</div>
